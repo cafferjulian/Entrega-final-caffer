@@ -1,14 +1,72 @@
 .d-item {
-    height: 500px;
+    height: 380px;
 }
 .d-img {
     height: 100%;
     object-fit: cover;
 }
-.d-gif-item {
-    height: 200px;
+
+.card {
+    margin-bottom: 1.25rem;
+    border: none;
+    padding: 0.20rem;
+  }
+  
+.image-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+
 }
-.d-gif {
-    height: 20%;
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-d-body {
+    padding: 0.10rem;
+  }
+  
+  .card h3 {
+    margin: 0.50rem;
+  }
+  
+  .card p {
+    margin-bottom: 1.25rem;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .card img {
     object-fit: cover;
-}
+  }
+
+  .card .card-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+  }

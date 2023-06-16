@@ -44,27 +44,119 @@
       </nav>
     </head>
     <!--Carrusel-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active d-item">
-            <img src="img/Carrusel-01.jpeg" class="d-block w-100 d-img" alt="...">   
-          </div>
-          <div class="carousel-item d-item">
-            <img src="img/Carrusel-02.jpeg" class="d-block w-100 d-img" alt="...">
-          </div>
-          <div class="carousel-item d-item">
-            <img src="img/Carrusel-03.jpeg" class="d-block w-100 d-img" alt="...">
+    <div id="carouselExampleAutoplaying" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+      <div class="carousel-indicators">
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></li>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active d-item">
+          <img src="img/Carrusel-01.png" class="d-block w-100 d-img" alt="...">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Lorem, ipsum.</h1>
+              <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, culpa.</p>
+              <p><a class="btn btn-lg btn-warning" href="./páginas/Contacto.html">Contáctanos</a></p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item d-item">
+          <img src="img/Carrusel-02.png" class="d-block w-100 d-img" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Lorem, ipsum dolor.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, culpa.</p>
+              <p><a class="btn btn-lg btn-warning" href="./páginas/Productos.html">Ver productos</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item d-item">
+          <img src="img/Carrusel-03.png" class="d-block w-100 d-img" alt="...">
+                    <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, culpa.</p>
+              <p><a class="btn btn-lg btn-warning" href="./páginas/Recetas.html">Ver recetas</a></p>
+            </div>
+          </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-d">
+            <div class="rounded-circle image-container">
+              <img src="img/Logo-circular-Snach.png" class="card-img-top" alt="Imagen 1">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fw-normal">Heading</h3>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+              <p><a class="btn btn-outline-success" href="#">Ver contenido</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-d">
+            <div class="rounded-circle image-container">
+              <img src="img/Logo-circular-Snach.png" class="card-img-top" alt="Imagen 2">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fw-normal">Heading</h3>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the second column.</p>
+              <p><a class="btn btn-outline-success" href="#">Ver contenido</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-d">
+            <div class="rounded-circle image-container">
+              <img src="img/Logo-circular-Snach.png" class="card-img-top" alt="Imagen 3">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fw-normal">Heading</h3>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the third column.</p>
+              <p><a class="btn btn-outline-success" href="#">Ver contenido</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container mt-4">
+      <div class="h-100 p-5 text-bg-danger text-center rounded-3">
+        <form>
+          <h5>Lorem, ipsum dolor.</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Suscribirse</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="./páginas/Productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="./páginas/Recetas.html" class="nav-link px-2 text-muted">Recetas</a></li>
+        <li class="nav-item"><a href="./páginas/Nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+        <li class="nav-item"><a href="./páginas/Contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Snach</p>
+    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
